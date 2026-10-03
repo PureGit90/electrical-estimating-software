@@ -1,0 +1,28 @@
+{
+  "name": "ElectricalTakeoffSoftware.com",
+  "directoryType": "software-tool",
+  "summary": "A cloud takeoff editor with AI symbol detection, priced per project.",
+  "differentiator": "The lowest published takeoff price here, charged per project instead of per user. It is a takeoff editor that exports estimates, not an estimating database.",
+  "url": "https://www.electricaltakeoffsoftware.com/",
+  "pricing": "$7 per project. 30-day free trial, no credit card.",
+  "category": "AI takeoff tools",
+  "scope": {
+    "takeoff": "AI symbol detection on vector PDFs. You review markers, place your own and export estimates.",
+    "library": "Not stated on the pages we read.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "not-stated",
+      "note": "Not stated on the pages we read."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Small shops that bid a few jobs a month and want to pay per project.",
+  "skipIf": "You want a priced material database and labor units.",
+  "watchOut": [
+    "The AI detection is described for vector PDFs. The review editor is said to work on scanned plans too."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.electricaltakeoffsoftware.com/"
+  ]
+}

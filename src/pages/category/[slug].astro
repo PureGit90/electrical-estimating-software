@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CATEGORIES, CONFIDENCE } from '../../lib/site';
+
+export function getStaticPaths() {
+  return CATEGORIES.map((c) => ({ params: { slug: c.slug }, props: { cat: c } }));
+}
+const { cat } = Astro.props;
+const listings = (await getCollection('listings'))
+  .filter((l) => l.data.category === cat.name)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+<BaseLayout title={cat.seoTitle} description={`${listings.length} listings in this group. ${cat.intro}`.slice(0, 155)}>
+  <div class="wrap prose wide">
+    <p class="crumbs"><a href="/">Home</a> / {cat.name}</p>
+    <h1>{cat.name}</h1>
+    <p class="lead">{cat.intro}</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <caption>{listings.length} listings, alphabetical</caption>
+        <thead><tr><th scope="col">Name</th><th scope="col">Price</th><th scope="col">Price source</th></tr></thead>
+        <tbody>
+          {listings.map((l) => (
+            <tr>
+              <th scope="row"><a href={`/listings/${l.id}/`}>{l.data.name}</a></th>
+              <td data-label="Price">{l.data.pricing ?? 'Not published'}</td>
+              <td data-label="Price source"><span class={`tag ${CONFIDENCE[l.data.pricingConfidence].tone}`}>{CONFIDENCE[l.data.pricingConfidence].label}</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,30 @@
+{
+  "name": "Trimble Accubid Anywhere",
+  "directoryType": "software-tool",
+  "summary": "Trimble's cloud estimating and takeoff subscription for electrical and industrial contractors.",
+  "differentiator": "Says in one line that estimating, graphical takeoff and integrated material pricing are one subscription, and names Trade Service as the source of the included material, labor and vendor pricing. Most bid tools here either sell a price feed separately or do not say.",
+  "url": "https://www.trimble.com/en/products/trimble-accubid-anywhere",
+  "pricing": "No price published on the pages we read.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Integrated graphical takeoff with AI-powered Auto Count.",
+    "library": "Shared items, assemblies and projects across offices, with database synchronization. No counts stated.",
+    "laborUnits": "Multiple labor columns. Use your own productivity units or preloaded standard industry labor rates.",
+    "materialPrices": {
+      "status": "included",
+      "note": "Page lists \"included real-time material, labor and vendor pricing from Trade Service\". Supplier Xchange requests bid-time price quotes from your suppliers."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Mid-size and larger electrical shops with several estimators who want pricing inside the subscription.",
+  "skipIf": "You want a published price. Trimble gives none here.",
+  "watchOut": [
+    "With no price on the page, \"included\" cannot be tied to a number.",
+    "Trimble also sells Accubid Classic. It has its own listing here."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.trimble.com/en/products/trimble-accubid-anywhere",
+    "https://mep.trimble.com/product/trimble-accubid-anywhere/electrical/"
+  ]
+}

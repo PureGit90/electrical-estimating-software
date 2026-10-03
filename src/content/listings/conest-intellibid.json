@@ -1,0 +1,30 @@
+{
+  "name": "Conest IntelliBid with SureCount",
+  "directoryType": "software-tool",
+  "summary": "IntelliBid estimating with SureCount takeoff, sold by edition and number of users.",
+  "differentiator": "States outright that the pricing services it connects to (NetPricer, EPIC, TRA-SER) are licensed separately, which most vendor pages leave out. Also counts its library and says labor is factored for height, floors and run length.",
+  "url": "https://conest.com/electrical-estimating-software/",
+  "pricing": "Quote only. The vendor says price depends on the edition (Standard, Plus, Pro) and the number of users.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "SureCount, a separate Conest takeoff product that syncs with IntelliBid. Material and labor are assigned during takeoff.",
+    "library": "Over 140,000 NEC-friendly items and over 500,000 pre-built assemblies (vendor figures).",
+    "laborUnits": "Pre-installed industry standard labor units, six levels of labor difficulty and Auto Labor Factoring for height, floors and run length.",
+    "materialPrices": {
+      "status": "separate",
+      "note": "NetPricer, EPIC and TRA-SER are licensed separately. It compares prices across up to 10 local suppliers."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Shops that want a big NEC-oriented library and are ready to budget for a pricing service on top of the software.",
+  "skipIf": "You want one all-in monthly price you can see before a demo.",
+  "watchOut": [
+    "\"The largest modern industry-smart database of any electrical estimating software\" is Conest's own claim.",
+    "Ask whether SureCount takeoff and a pricing service are separate line items in your quote."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://conest.com/electrical-estimating-software/",
+    "https://conest.com/products/intellibid-electrical-estimating-software/"
+  ]
+}

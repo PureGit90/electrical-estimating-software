@@ -1,0 +1,31 @@
+{
+  "name": "McCormick Electrical Estimating",
+  "directoryType": "software-tool",
+  "summary": "Electrical bid software with built-in takeoff and a large assembly library. It publishes sizes and a labor-unit source, but no price.",
+  "differentiator": "States both a library size (55,000 items, 25,000 assemblies) and a labor-unit source (NECA, PHCC and MCAA standards, on its software page). It does not say whether pricing services cost extra, although its own 2026 buying guide tells readers to ask every vendor that question.",
+  "url": "https://www.mccormicksys.com/industries/electrical/",
+  "pricing": "No price published on the pages we read.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Built-in takeoff with Auto-count and Auto Home Run (vendor features).",
+    "library": "Over 55,000 items and 25,000 prebuilt assemblies, with separate USA and Canada databases.",
+    "laborUnits": "Pre-populated labor units. The software page says they follow NECA, PHCC and MCAA standards.",
+    "materialPrices": {
+      "status": "connects",
+      "note": "Updates pricing from major pricing services or your supply house. The pages do not say what the services cost."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Shops that want takeoff, assemblies and labor units in one electrical-specific package and will request a quote anyway.",
+  "skipIf": "You need a price before you talk to sales.",
+  "watchOut": [
+    "\"America's #1\" is McCormick's own claim.",
+    "One competing vendor's list prints a McCormick price of \"$1,500+/yr\". McCormick publishes no price on the pages we read."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.mccormicksys.com/industries/electrical/",
+    "https://www.mccormicksys.com/software/mccormick/",
+    "https://www.mccormicksys.com/blog/the-best-electrical-estimating-software-2026-guide/"
+  ]
+}

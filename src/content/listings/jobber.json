@@ -1,0 +1,28 @@
+{
+  "name": "Jobber",
+  "directoryType": "software-tool",
+  "summary": "Field service software with four plans and quotes on every plan.",
+  "differentiator": "The cheapest published field-service entry point we read ($29 a month on annual billing for one user), though its quote tools are general: line items, optional extras and signatures, with no electrical database.",
+  "url": "https://www.getjobber.com/pricing/",
+  "pricing": "Core $29 a month on annual billing, Connect $99, Grow $149, Plus $399 (15 users). Extra users $29 a month. Month-to-month costs more.",
+  "category": "Field service with quoting",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Quotes with line items, optional upsell lines and signatures. No electrical database is described.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Line items you set up. No price feed is named on the pricing page."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Solo and small-crew electricians doing service work who want a low entry price.",
+  "skipIf": "You need an electrical database, assemblies or takeoff.",
+  "watchOut": [
+    "Prices vary by team size and billing choice. Check the plan you would actually buy."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.getjobber.com/pricing/"
+  ]
+}

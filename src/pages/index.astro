@@ -1,0 +1,76 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME, TAGLINE, SITE_DESCRIPTION, CATEGORIES, HERO_PANEL, DATA_DATE_LABEL } from '../lib/site';
+
+const listings = (await getCollection('listings')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const n = listings.length;
+const priced = listings.filter((l) => l.data.pricingConfidence === 'vendor').length;
+const quoteOnly = listings.filter((l) => l.data.pricingConfidence === 'quote').length;
+const feedIncluded = listings.filter((l) => l.data.scope.materialPrices.status === 'included').length;
+const feedSeparate = listings.filter((l) => l.data.scope.materialPrices.status === 'separate').length;
+const feedSilent = listings.filter((l) => l.data.scope.materialPrices.status === 'not-stated' || l.data.scope.materialPrices.status === 'connects').length;
+const feedYours = listings.filter((l) => l.data.scope.materialPrices.status === 'you-enter').length;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: SITE_NAME,
+    itemListElement: listings.map((listing, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: listing.data.name,
+      url: new URL(`/listings/${listing.id}/`, Astro.site ?? 'https://example.com').toString(),
+    })),
+  },
+];
+---
+<BaseLayout title="Electrical Estimating Software Compared: Price and Scope" description={SITE_DESCRIPTION} jsonLd={jsonLd}>
+  <section class="hero">
+    <div class={HERO_PANEL ? 'wrap' : 'wrap solo'}>
+      <div>
+        <h1>{TAGLINE}</h1>
+        <p>{SITE_DESCRIPTION}</p>
+        <p><a class="btn" href="/all/">See all {listings.length} listings</a></p>
+      </div>
+      {HERO_PANEL && (
+        <div class="sheet" aria-label={HERO_PANEL.title}>
+          <h2>{HERO_PANEL.title}</h2>
+          {HERO_PANEL.subtitle && <p class="trip">{HERO_PANEL.subtitle}</p>}
+          <dl>
+            {HERO_PANEL.rows.map((r) => (
+              <div class={`row${r.kind ? ' ' + r.kind : ''}`}><dt>{r.label}</dt><dd>{r.value}</dd></div>
+            ))}
+          </dl>
+          <p class="src"><a href={HERO_PANEL.source.href}>{HERO_PANEL.source.label}</a>, read {DATA_DATE_LABEL}.</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <div class="wrap">
+    <h2>What the vendors' own pages say</h2>
+    <ul class="facts">
+      <li><strong>{priced}</strong><span>of {n} publish a price</span></li>
+      <li><strong>{quoteOnly}</strong><span>are quote only</span></li>
+      <li><strong>{feedIncluded}</strong><span>say material prices are included</span></li>
+      <li><strong>{feedSeparate}</strong><span>say they are sold separately</span></li>
+      <li><strong>{feedYours}</strong><span>leave prices to you</span></li>
+      <li><strong>{feedSilent}</strong><span>name a feed without a cost, or say nothing</span></li>
+    </ul>
+    <p>Most buyers compare a monthly price. For estimating tools, the larger question is often who pays for the material price feed. <a href="/all/">The full table</a> sets out what each vendor states on that and on takeoff, libraries and labor units.</p>
+    <h2>Where to start</h2>
+    <ul class="paths">
+      {CATEGORIES.map((c) => (
+        <li>
+          <h3><a href={`/category/${c.slug}/`}>{c.name}</a></h3>
+          <p>{listings.filter((l) => l.data.category === c.name).length} listings. {c.intro}</p>
+        </li>
+      ))}
+    </ul>
+    <div class="panel">
+      <h2>What this site is not</h2>
+      <p>It does not rank listings, and nobody pays to be listed or placed higher. Prices are read from each vendor's own pages on {DATA_DATE_LABEL}. Read <a href="/how-we-compare/">how we compare</a> and <a href="/about/">who runs this site</a>.</p>
+    </div>
+  </div>
+</BaseLayout>

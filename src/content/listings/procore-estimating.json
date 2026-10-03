@@ -1,0 +1,28 @@
+{
+  "name": "Procore Estimating",
+  "directoryType": "software-tool",
+  "summary": "General construction takeoff and estimating inside the Procore platform, used by trades as well as general contractors.",
+  "differentiator": "Takeoff runs against a customizable database of parts, assemblies, equipment and services, and you adjust material prices and labor units yourself. It is a general tool, not an electrical one, and publishes no electrical library size.",
+  "url": "https://www.procore.com/estimating",
+  "pricing": "No price published on the page we read. Other sites quote different figures for this product, so we list none.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Upload plans and take off with auto-count and plan overlay. AI detects floor plan areas and counts repeated symbols.",
+    "library": "A customizable database of parts, assemblies, equipment and services. Counts are not stated.",
+    "laborUnits": "You adjust labor units and margins in the estimate. No labor-unit source is stated.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "The page says you adjust material prices. No price feed is named."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Shops already on Procore for project management that want estimating in the same system.",
+  "skipIf": "You want an electrical-specific database with prices to start from.",
+  "watchOut": [
+    "Takeoff and estimating are described for all trades. Nothing on the page is specific to electrical work."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.procore.com/estimating"
+  ]
+}

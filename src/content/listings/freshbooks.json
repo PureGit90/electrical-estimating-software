@@ -1,0 +1,30 @@
+{
+  "name": "FreshBooks",
+  "directoryType": "software-tool",
+  "summary": "General small-business accounting with estimates and invoices.",
+  "differentiator": "A general accounting tool that ranks itself first in its own \"electrical estimating software\" guide. That guide never mentions NEC, and the product has no electrical database.",
+  "url": "https://www.freshbooks.com/pricing",
+  "pricing": "List prices: Lite $23 a month (5 billable clients), Plus $43 (50), Premium $70 (unlimited). Select is by quote. Team members are $11 a month each. Introductory discounts appear on the page and change.",
+  "category": "Quotes and invoices",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Estimates and invoices from templates. No electrical database is described.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Line items you enter. No price feed is named."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Electricians who mainly need invoicing and bookkeeping and write simple estimates.",
+  "skipIf": "You want electrical-specific takeoff or assemblies.",
+  "watchOut": [
+    "Client limits apply on the lower plans.",
+    "Its guide ranks FreshBooks \"Best overall\" and is vendor content."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.freshbooks.com/pricing",
+    "https://www.freshbooks.com/hub/estimates/electrical-estimating"
+  ]
+}

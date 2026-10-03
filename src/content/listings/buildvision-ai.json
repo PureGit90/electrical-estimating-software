@@ -1,0 +1,30 @@
+{
+  "name": "BuildVision AI",
+  "directoryType": "software-tool",
+  "summary": "AI takeoff and quote generation for electrical plans, on a flat monthly price.",
+  "differentiator": "Flat monthly price with quote generation in the same plan. The company also publishes a \"7 best electrical estimating software\" list that ranks its own product first and says it \"tested every major platform\" with no method given, which is why this site does not rely on that list.",
+  "url": "https://www.buildvisionai.com/pricing",
+  "pricing": "$299 a month (Pro) or $499 a month (Max), flat and not per seat. 14-day free trial with 50,000 AI tokens.",
+  "category": "AI takeoff tools",
+  "scope": {
+    "takeoff": "AI plan reading and quantity extraction, with automated material takeoffs.",
+    "library": "Custom pricing and assembly libraries that you build. Counts are not stated.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Pricing libraries are custom. No price feed is named on the pricing page."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Small shops that want AI takeoff and a branded quote for one flat price.",
+  "skipIf": "You want a prebuilt NEC assembly library with live prices.",
+  "watchOut": [
+    "Its own ranking page lists McCormick at \"$1,500+/yr\", a figure McCormick does not publish.",
+    "Plan usage is measured in AI tokens. Check what a typical project uses."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.buildvisionai.com/pricing",
+    "https://www.buildvisionai.com/best-electrical-estimating-software"
+  ]
+}

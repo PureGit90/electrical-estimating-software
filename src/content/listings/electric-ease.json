@@ -1,0 +1,29 @@
+{
+  "name": "Electric Ease",
+  "directoryType": "software-tool",
+  "summary": "Cloud estimating and takeoff aimed at electrical contractors, with prices on its own site.",
+  "differentiator": "One of the few specialist tools that prints a per-user price on its own site. Its pages describe real-time material pricing updates but do not name the source or say whether it costs extra, and they do not mention NEC or labor units.",
+  "url": "https://electric-ease.com/",
+  "pricing": "$299 a month per user, or $2,999 a year per user. Enterprise (5 or more users) by quote. 14-day free trial.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Digital counting and measuring tools.",
+    "library": "Customizable assemblies. Counts are not stated.",
+    "laborUnits": "Labor costs are mentioned, but no labor-unit source is named.",
+    "materialPrices": {
+      "status": "not-stated",
+      "note": "Pages say \"real-time material pricing updates\". The source and any extra cost are not stated."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Small to mid-size shops that want a visible price and a cloud takeoff.",
+  "skipIf": "You need to know the labor-unit source or price feed before you buy.",
+  "watchOut": [
+    "The pricing page FAQ also mentions $199 and $299 monthly figures, which do not match the plan boxes. Confirm the price when you sign up."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://electric-ease.com/",
+    "https://www.electric-ease.com/pricing"
+  ]
+}

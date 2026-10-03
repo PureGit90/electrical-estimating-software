@@ -1,0 +1,28 @@
+{
+  "name": "Joist",
+  "directoryType": "software-tool",
+  "summary": "Estimates, invoices and payments for solo contractors, with four plans.",
+  "differentiator": "Priced for the solo electrician: about $14 a month on annual billing for unlimited documents, with estimates that convert to invoices. Scheduling arrives only on the highest plan.",
+  "url": "https://www.joist.com/pricing/",
+  "pricing": "Basics $8.34 a month on annual billing (up to 5 documents a month), Pro $14.17, Elite $26.67, Run $58.33 (an introductory price). Monthly billing costs more. 14-day free trial.",
+  "category": "Quotes and invoices",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Line items and photos on estimates. No electrical database is described.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Line items you enter. No price feed is named."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "One-person shops that need clean estimates, invoices and card payments.",
+  "skipIf": "You need takeoff, assemblies or a price database.",
+  "watchOut": [
+    "The Basics plan caps you at 5 documents a month."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.joist.com/pricing/"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Trimble Accubid Classic",
+  "directoryType": "software-tool",
+  "summary": "Trimble's long-running electrical estimating program, with hosted access and a live link to LiveCount takeoff.",
+  "differentiator": "Labor handling is spelled out (units, factoring, tracking and cost codes) and the library is counted at 42,000 items and 13,000 assemblies, which Trimble does not do for Anywhere. A footnote says the AI takeoff works only with the Estimating Essentials Hosted subscription.",
+  "url": "https://www.trimble.com/en/products/trimble-accubid-classic",
+  "pricing": "No price published on the pages we read.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Live two-way link to Trimble LiveCount, a cloud takeoff tool. AI counting only on the hosted Essentials subscription.",
+    "library": "Over 42,000 items and 13,000 assemblies, plus project-specific assemblies you create.",
+    "laborUnits": "Labor units, labor factoring, labor tracking and cost codes are built in.",
+    "materialPrices": {
+      "status": "connects",
+      "note": "The page describes TRA-SER as pricing software that imports pricing data into estimating systems. It does not say whether that is included or priced separately."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Established shops already on Accubid or wanting a counted library with detailed labor control.",
+  "skipIf": "You want one subscription with pricing stated as included. Read the Anywhere listing.",
+  "watchOut": [
+    "The two Accubid products are sold differently. Check which one a quote covers."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.trimble.com/en/products/trimble-accubid-classic"
+  ]
+}

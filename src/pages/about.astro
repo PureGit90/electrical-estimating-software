@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME, CONTACT_EMAIL, OPERATOR_NAME, OPERATOR_PLACE, DATA_DATE_LABEL } from '../lib/site';
+
+const listings = await getCollection('listings');
+---
+<BaseLayout title="About This Site and Who Runs It" description={`Who runs ${SITE_NAME}, why it exists, how it is paid for, and what it has and has not done.`}>
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / About</p>
+    <h1>Who runs this site, and why it exists</h1>
+    <p class="lead">Most pages that rank electrical estimating software are written by vendors. This one records what each vendor's own pages say, and what they leave out.</p>
+
+    <h2>Who runs it</h2>
+    <p>{SITE_NAME} is operated by {OPERATOR_NAME} in {OPERATOR_PLACE}. It is an independent site. No listed vendor owns it, pays to be listed, or reviews what we write about them before it is published.</p>
+    {CONTACT_EMAIL && <p>You can reach us at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>}
+
+    <h2>What we did</h2>
+    <p>On {DATA_DATE_LABEL} we read the public pages of {listings.length} vendors and recorded what each says about price, takeoff, assemblies, labor units and material price feeds. Every listing links to the pages we read.</p>
+
+    <h2>What we did not do</h2>
+    <p>We did not request quotes, call vendors or use their products. We have not tested any listing, and nothing here is a recommendation to buy one. This site makes no claim to trade experience. Electrical contractors know their own work, so the table lists what vendors state and leaves the judgment to you.</p>
+
+    <h2>How the site is paid for</h2>
+    <p>Some links may become affiliate links, marked as sponsored in the page code and disclosed on the <a href="/affiliate-disclosure/">affiliate disclosure</a> page. Whether a vendor has a program does not decide whether it is listed, where it appears or what we say about it.</p>
+
+    <h2>If we got something wrong</h2>
+    <p>Tell us and we will check it against the vendor's page and fix it. The process and a log of corrections are on the <a href="/corrections/">corrections page</a>.</p>
+  </div>
+</BaseLayout>

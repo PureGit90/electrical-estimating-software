@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONFIDENCE, CONTACT_EMAIL, DATA_DATE_LABEL } from '../lib/site';
+---
+<BaseLayout title="How We Compare: Method and Limits" description="How this site reads vendors' own pages, what the price labels mean, what we have not done, and who is not included.">
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / How we compare</p>
+    <h1>How we compare</h1>
+    <p class="lead">This site records what vendors publish about price and features, and nothing more.</p>
+
+    <h2>What we did</h2>
+    <p>On {DATA_DATE_LABEL} we opened each vendor's own pages and copied the figures and statements that appear there, with the page address, into its listing.</p>
+
+    <h2>What we did not do</h2>
+    <ul>
+      <li>We did not request quotes, call vendors or use their products. <strong>We have not hands-on tested any listing.</strong></li>
+      <li>We did not verify claims such as "largest" or "only". They are marked as the vendor's own.</li>
+    </ul>
+
+    <h2>The four things we record</h2>
+    <p>Estimating tools differ less in their monthly price than in what is included in it. For each listing we record what the vendor's pages say about four things.</p>
+    <ul>
+      <li><strong>Takeoff.</strong> Whether the tool measures and counts from plans itself, links to a separate takeoff product, or expects you to bring quantities from elsewhere.</li>
+      <li><strong>Items and assemblies.</strong> The size of the material library and the assemblies in it, when the vendor gives a count. Counts are the vendor's figures, not ours.</li>
+      <li><strong>Labor units.</strong> Whether labor units come with the tool and, where the vendor names it, the standard they follow, such as NECA.</li>
+      <li><strong>Material prices.</strong> Whether current material prices are included in the plan, sold separately, offered with the cost not stated, entered by you, or not stated at all.</li>
+    </ul>
+    <p>Where a vendor's pages say nothing, we write "Not stated on the pages we read" and do not guess.</p>
+
+    <h2>What the price labels mean</h2>
+    <ul>
+      <li><strong>{CONFIDENCE.vendor.label}.</strong> {CONFIDENCE.vendor.note}</li>
+      <li><strong>{CONFIDENCE['third-party'].label}.</strong> {CONFIDENCE['third-party'].note}</li>
+      <li><strong>{CONFIDENCE.quote.label}.</strong> {CONFIDENCE.quote.note} We do not estimate a number.</li>
+    </ul>
+    <p>"Not stated on the pages we read" means exactly that. A vendor may say it elsewhere.</p>
+
+    <h2>Why we do not rely on vendor ranking lists</h2>
+    <p>Several vendors publish "best electrical estimating software" lists. In the two we opened, the publisher ranked its own product first, and one said it "tested every major platform" without describing how. We use those lists only to find tools, then read each tool's own pages.</p>
+
+    <h2>How listings are ordered</h2>
+    <p>Alphabetically. We do not rank listings. Nobody pays to be listed or to move up, and the order never reflects a commission.</p>
+
+    <h2>Money</h2>
+    <p>Some links may be affiliate links, and we may earn a commission if you buy through them. Whether a vendor has an affiliate program does not decide whether it is listed or what we say about it. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
+
+    <h2 id="corrections">Corrections</h2>
+    <p>Each listing shows the date we read it. If something is out of date or wrong, see the <a href="/corrections/">corrections page</a>.{CONTACT_EMAIL && <> Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</>}</p>
+  </div>
+</BaseLayout>

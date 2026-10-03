@@ -1,0 +1,29 @@
+{
+  "name": "STACK Takeoff and Estimating",
+  "directoryType": "software-tool",
+  "summary": "Cloud takeoff and estimating for many trades, with a published per-user price.",
+  "differentiator": "Publishes a per-user monthly price and a cloud takeoff with symbol auto-count, but its electrical page makes no claim about an electrical database, assemblies, labor units or price feeds.",
+  "url": "https://www.stackct.com/electrical-estimating-software/",
+  "pricing": "Plans listed \"as low as\" $299 (Takeoff & Estimate), $49 (Build & Operate) and $348 (full platform) per user per month. The pricing page does not say which plan includes electrical takeoff.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Cloud takeoff with Autocount for symbols and wire-length measurement.",
+    "library": "Not stated on the pages we read.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "not-stated",
+      "note": "Not stated on the pages we read."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Teams that want cloud takeoff across several trades and will bring their own pricing.",
+  "skipIf": "You want electrical assemblies and labor units supplied.",
+  "watchOut": [
+    "\"As low as\" means the quoted figure is a starting price."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.stackct.com/electrical-estimating-software/",
+    "https://www.stackct.com/pricing/"
+  ]
+}

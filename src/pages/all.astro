@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME, CONFIDENCE, PRICE_FEED, CATEGORIES, categoryByName } from '../lib/site';
+
+const listings = (await getCollection('listings')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const groups = CATEGORIES.map((c) => ({ cat: c, items: listings.filter((l) => l.data.category === c.name) })).filter((g) => g.items.length > 0);
+---
+<BaseLayout title={`Electrical Estimating Software: All ${listings.length} Tools Compared`} description={`${listings.length} electrical estimating, takeoff and field service tools. What each vendor states on price, takeoff, assemblies, labor units and material price feeds.`}>
+  <div class="wrap prose wide">
+    <p class="crumbs"><a href="/">Home</a> / All tools</p>
+    <h1>All {listings.length} tools, side by side</h1>
+    <p class="lead">Every cell below is what the vendor's own pages say, read on the date shown on each listing. "Not stated" means the pages we read are silent. Alphabetical within each group. Nobody pays to be listed or placed higher.</p>
+    <div class="legend" aria-label="Material price key">
+      {Object.values(PRICE_FEED).map((f) => <span class={`tag ${f.tone}`} title={f.note}>{f.label}</span>)}
+    </div>
+    {groups.map((g) => (
+      <section>
+        <h2 id={g.cat.slug}>{g.cat.name}</h2>
+        <div class="table-wrap">
+          <table class="stack dense">
+            <caption>{g.items.length} tools</caption>
+            <thead><tr><th scope="col">Tool</th><th scope="col">Price</th><th scope="col">Takeoff</th><th scope="col">Library</th><th scope="col">Labor units</th><th scope="col">Material prices</th></tr></thead>
+            <tbody>
+              {g.items.map((l) => (
+                <tr>
+                  <th scope="row"><a href={`/listings/${l.id}/`}>{l.data.name}</a></th>
+                  <td data-label="Price">{l.data.pricing ?? 'Not published'}<br /><span class={`tag ${CONFIDENCE[l.data.pricingConfidence].tone}`}>{CONFIDENCE[l.data.pricingConfidence].label}</span></td>
+                  <td data-label="Takeoff">{l.data.scope.takeoff}</td>
+                  <td data-label="Library">{l.data.scope.library}</td>
+                  <td data-label="Labor units">{l.data.scope.laborUnits}</td>
+                  <td data-label="Material prices"><span class={`tag ${PRICE_FEED[l.data.scope.materialPrices.status].tone}`}>{PRICE_FEED[l.data.scope.materialPrices.status].label}</span><br />{l.data.scope.materialPrices.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

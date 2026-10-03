@@ -1,0 +1,30 @@
+{
+  "name": "Housecall Pro",
+  "directoryType": "software-tool",
+  "summary": "Field service software for home-service companies, with three published plans.",
+  "differentiator": "Publishes all three plan prices and says a price book and Good-Better-Best options come with every plan, so a small shop can see its full software cost before it talks to anyone.",
+  "url": "https://www.housecallpro.com/pricing/",
+  "pricing": "Basic $59 a month on annual billing ($79 monthly), 1 user. Essentials $149 ($189 monthly), 5 users. Max $299 ($329 monthly), 8 users and $35 a month for each extra user.",
+  "category": "Field service with quoting",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Price book and Good-Better-Best options on all three plans. No electrical database is described.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Quotes use a price book you maintain. No price feed is named."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Residential service and repair electricians who quote from their own price book.",
+  "skipIf": "You bid plans and specs and need takeoff.",
+  "watchOut": [
+    "Annual billing prices are lower than the monthly prices shown.",
+    "Its \"best electrician apps\" article on the same site is vendor content."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.housecallpro.com/pricing/",
+    "https://www.housecallpro.com/resources/best-electrician-apps/"
+  ]
+}

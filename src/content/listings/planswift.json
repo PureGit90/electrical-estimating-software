@@ -1,0 +1,29 @@
+{
+  "name": "PlanSwift",
+  "directoryType": "software-tool",
+  "summary": "Takeoff and estimating in one tool with an electrical starter pack and a published yearly price.",
+  "differentiator": "Prints a yearly price for one seat and ships an electrical starter pack of assemblies, parts and symbols. Unit costs and labor are yours to supply, so it suits shops that already have their own numbers.",
+  "url": "https://www.planswift.com/estimating/electrical/",
+  "pricing": "$2,000 a year (Essential) or $3,000 a year (Core), per seat, annual billing. 14-day free trial.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Digital takeoff and estimating in one tool. Core adds Auto Takeoff, an AI first pass for counts, lengths and areas.",
+    "library": "Electrical Starter Pack with assemblies, parts and symbols for boxes, conduit, fire alarm, lighting, receptacles, switches and wire. Counts are not stated.",
+    "laborUnits": "You build labor units, waste and markups into the takeoff yourself.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Quantities move into Excel pricing sheets you already use. No price feed is named."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Estimators with their own price lists and labor numbers who want fast on-screen takeoff.",
+  "skipIf": "You want the software to supply current material prices.",
+  "watchOut": [
+    "The Auto Takeoff tool is only in the higher plan."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.planswift.com/estimating/electrical/",
+    "https://www.planswift.com/pricing"
+  ]
+}

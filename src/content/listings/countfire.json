@@ -1,0 +1,30 @@
+{
+  "name": "Countfire",
+  "directoryType": "software-tool",
+  "summary": "Cloud takeoff for mechanical and electrical estimating teams, with estimates built from your own priced items.",
+  "differentiator": "Built around PDF takeoff and a priced-items list that fills from your past work. Its savings calculator uses UK estimator day rates in pounds, and the pages do not say whether a US material database is included.",
+  "url": "https://www.countfire.com/",
+  "pricing": "No price published on the pages we read.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Cloud PDF takeoff on PC or Mac. Counts thousands of symbols across all drawings in a project.",
+    "library": "Estimates start auto-populated from your previous items and products. No library count stated.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "The page says regularly used items \"arrive priced\" from your own history. No price feed is named."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Estimating teams that want consistent takeoff and will carry their own prices.",
+  "skipIf": "You want a prebuilt US electrical database and NEC-based assemblies.",
+  "watchOut": [
+    "The company is UK-based and also lists a US phone line."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.countfire.com/",
+    "https://www.countfire.com/electrical-estimating-software",
+    "https://www.countfire.com/contact"
+  ]
+}

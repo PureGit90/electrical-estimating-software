@@ -1,0 +1,31 @@
+{
+  "name": "BuildOps",
+  "directoryType": "software-tool",
+  "summary": "Commercial contractor management software for service, projects and financials.",
+  "differentiator": "Aimed at commercial contractors in several trades, including electrical. Its pricing page says there are no standard plans and that a demo and discovery process comes before a custom proposal.",
+  "url": "https://buildops.com/",
+  "pricing": "Quote only. The vendor says pricing depends on field and office users, the trades you run and the tools your back office needs.",
+  "category": "Field service with quoting",
+  "scope": {
+    "takeoff": "Not stated on the pages we read.",
+    "library": "Not stated on the pages we read.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "not-stated",
+      "note": "Not stated on the pages we read."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Commercial service and project contractors who want one platform for field, office and finance.",
+  "skipIf": "You want a self-serve price and an estimating database.",
+  "watchOut": [
+    "The homepage we read does not describe estimating or takeoff.",
+    "BuildOps also publishes buying guides on electrical estimating. Those are vendor content."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://buildops.com/",
+    "https://buildops.com/pricing",
+    "https://buildops.com/resources/electrical-estimating-software-cost"
+  ]
+}

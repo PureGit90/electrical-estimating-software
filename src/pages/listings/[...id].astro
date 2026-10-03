@@ -1,0 +1,80 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CONFIDENCE, PRICE_FEED, categoryByName } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  return listings.map((listing) => ({
+    params: { id: listing.id },
+    props: { listing },
+  }));
+}
+
+const { listing } = Astro.props;
+const d = listing.data;
+const conf = CONFIDENCE[d.pricingConfidence];
+const href = listing.data.affiliateUrl ?? listing.data.url;
+const cat = categoryByName(d.category);
+const feed = PRICE_FEED[d.scope.materialPrices.status];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: d.name,
+    description: d.summary,
+    url: d.url,
+  },
+];
+---
+<BaseLayout title={`${d.name} Price and Features`} description={`${d.summary}${d.lastChecked ? ` Read ${d.lastChecked}.` : ''}`} jsonLd={jsonLd}>
+  <div class="wrap prose wide">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/all/">All listings</a> / {d.name}</p>
+    <h1>{d.name}</h1>
+    <div class="meta">
+      <span class={`tag ${conf.tone}`}>{conf.label}</span>
+      {cat && <span class="tag neutral">{cat.short}</span>}
+      {d.lastChecked && <span class="tag neutral">Read {d.lastChecked}</span>}
+    </div>
+    <p class="lead">{d.summary}</p>
+    <p><a class="btn" href={href} rel="sponsored" target="_blank">Go to {d.name}</a></p>
+
+    <div class="panel">
+      <h2>What sets it apart</h2>
+      <p>{d.differentiator}</p>
+    </div>
+
+    <h2>What the vendor states</h2>
+    <div class="table-wrap">
+      <table class="stack">
+        <caption>Taken from the pages listed at the bottom of this page</caption>
+        <tbody>
+          <tr><th scope="row">Takeoff</th><td>{d.scope.takeoff}</td></tr>
+          <tr><th scope="row">Items and assemblies</th><td>{d.scope.library}</td></tr>
+          <tr><th scope="row">Labor units</th><td>{d.scope.laborUnits}</td></tr>
+          <tr><th scope="row">Material prices</th><td><span class={`tag ${feed.tone}`}>{feed.label}</span><br />{d.scope.materialPrices.note}</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {d.pricing && (<><h2>Price</h2><p>{d.pricing}</p><p class="small">{conf.note}</p></>)}
+    {d.address && (<><h2>Address</h2><p>{d.address}</p></>)}
+
+    {(d.bestFor || d.skipIf) && (
+      <div class="two">
+        {d.bestFor && <div><strong>Best for</strong><p>{d.bestFor}</p></div>}
+        {d.skipIf && <div><strong>Skip it if</strong><p>{d.skipIf}</p></div>}
+      </div>
+    )}
+
+    {d.watchOut.length > 0 && (<><h2>Watch out for</h2><ul>{d.watchOut.map((w) => <li>{w}</li>)}</ul></>)}
+
+    {d.sources.length > 0 && (
+      <>
+        <h2>Pages we read</h2>
+        <ul class="sources">{d.sources.map((s) => <li><a href={s} rel="noopener" target="_blank">{s}</a></li>)}</ul>
+      </>
+    )}
+    <p class="small">Prices change. If this is out of date, <a href="/corrections/">tell us</a>.</p>
+  </div>
+</BaseLayout>

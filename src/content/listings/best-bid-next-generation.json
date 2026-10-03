@@ -1,0 +1,31 @@
+{
+  "name": "Best Bid Next Generation",
+  "directoryType": "software-tool",
+  "summary": "Electrical estimating sold as a one-time purchase, from a company whose page says electrical estimating is its sole focus.",
+  "differentiator": "States a one-time price and says plainly there are no per-seat, support or yearly update fees. It takes the opposite design approach to the big libraries: one master assembly you edit, plus unlimited custom assemblies.",
+  "url": "https://bestbidestimating.com/",
+  "pricing": "$2,500 one-time for Best Bid Next Generation. A server addition is $3,500. Interest-free financing is offered. The vendor says there are no per-seat, support or yearly update fees.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "Built-in on-screen takeoff with Auto Count.",
+    "library": "One master assembly you change, plus unlimited custom assemblies. No library count stated.",
+    "laborUnits": "Labor summarized by item, phase or assembly. The source of the units is not stated.",
+    "materialPrices": {
+      "status": "connects",
+      "note": "Material pricing via NetPricer or Real-Time Pricing. What either costs is not stated."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Owner-estimators who want to pay once and build their own assemblies.",
+  "skipIf": "You want a large prebuilt assembly library to start from.",
+  "watchOut": [
+    "\"Half the cost of other software\" is Best Bid's own claim.",
+    "A price-feed service may still cost extra. The page does not say.",
+    "Best Bid Hybrid Pro is still supported for existing owners but is no longer the lead product."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://bestbidestimating.com/",
+    "https://bestbidestimating.com/electrical-residential-estimator/"
+  ]
+}

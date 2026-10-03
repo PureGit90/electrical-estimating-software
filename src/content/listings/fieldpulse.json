@@ -1,0 +1,28 @@
+{
+  "name": "FieldPulse",
+  "directoryType": "software-tool",
+  "summary": "Field service software sold by seats for a contract term.",
+  "differentiator": "Lists Pricebook as an optional add-on instead of a base feature, and prices by seats bought up front for the contract term.",
+  "url": "https://www.fieldpulse.com/pricing",
+  "pricing": "Quote only. Priced by seats bought up front for your contract term, with the rate set by what each seat needs.",
+  "category": "Field service with quoting",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Pricebook is listed as an optional add-on.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "separate",
+      "note": "Pricebook is an optional add-on. How it is filled is not stated."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Shops that want to scope seats and add-ons in a demo.",
+  "skipIf": "You want a price and a price book included without a sales call.",
+  "watchOut": [
+    "Other add-ons listed include phone, fleet tracking and custom forms."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.fieldpulse.com/pricing"
+  ]
+}

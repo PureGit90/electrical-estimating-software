@@ -1,0 +1,29 @@
+{
+  "name": "Beam AI",
+  "directoryType": "software-tool",
+  "summary": "AI takeoff that returns an Excel-ready quantity file from your electrical PDFs, checked by the vendor.",
+  "differentiator": "Works more like a service than software. You upload plans and get a QA-approved Excel takeoff back in 24 to 72 hours, by the vendor's own account.",
+  "url": "https://www.ibeam.ai/subcontractors/electrical",
+  "pricing": "Annual license, priced by trade. Custom quote only.",
+  "category": "AI takeoff tools",
+  "scope": {
+    "takeoff": "AI extracts quantities for wiring, lighting, grounding, switches, outlets and boxes from PDF plans, then returns an Excel file.",
+    "library": "Not stated on the pages we read.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "not-stated",
+      "note": "Estimates are \"aligned to your internal formats, pricing logic\". No price source is named."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Shops with more bids than estimators that want quantities back quickly.",
+  "skipIf": "You need same-hour turnaround or want to run takeoff yourself.",
+  "watchOut": [
+    "Customer results on the page (such as revenue doubling) are testimonials.",
+    "A turnaround of 24 to 72 hours is part of the vendor's description."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.ibeam.ai/subcontractors/electrical"
+  ]
+}

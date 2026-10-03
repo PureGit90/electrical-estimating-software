@@ -1,0 +1,31 @@
+{
+  "name": "ServiceTitan",
+  "directoryType": "software-tool",
+  "summary": "A large service and project management platform whose estimates tie to one pricebook.",
+  "differentiator": "Its own estimating page says plan takeoff happens in other tools (it names McCormick, Conest and Trimble Accubid) and offers to import their output. Estimates are Good-Better-Best proposals, line-item estimates and project estimates tied to one pricebook.",
+  "url": "https://www.servicetitan.com/industries/electrical-software/estimating",
+  "pricing": "Quote only. Plans are named Starter, Essentials and The Works, priced per technician, and each has a \"Request Pricing\" button.",
+  "category": "Field service with quoting",
+  "scope": {
+    "takeoff": "None. The page says contractors use dedicated takeoff tools and import the results, or work from spreadsheets.",
+    "library": "A pricebook that the page says \"pulls from industry supplier catalogs\".",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "connects",
+      "note": "The pricebook pulls from supplier catalogs, in the vendor's words. What that feed costs is not stated."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Shops that run service and project work together and want estimates, dispatch, invoicing and accounting in one system.",
+  "skipIf": "You mainly bid commercial plans and need takeoff inside the same tool.",
+  "watchOut": [
+    "Its electrical estimating guide is vendor content that presents ServiceTitan as the all-in-one answer.",
+    "The statistics it quotes (such as a 16% average revenue increase) are the vendor's own."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.servicetitan.com/industries/electrical-software/estimating",
+    "https://www.servicetitan.com/pricing",
+    "https://www.servicetitan.com/blog/electrical-bidding-software"
+  ]
+}

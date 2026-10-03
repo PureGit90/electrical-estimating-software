@@ -1,0 +1,29 @@
+{
+  "name": "Service Fusion",
+  "directoryType": "software-tool",
+  "summary": "Field service software with unlimited users on every plan.",
+  "differentiator": "Unlimited users on every plan, so cost rises with feature tier and not with headcount, unlike the per-user and per-technician models elsewhere.",
+  "url": "https://www.servicefusion.com/pricing",
+  "pricing": "Starter $208, Plus $325, Pro $533 a month on annual billing (a 15% discount). Monthly billing is $245, $382 and $627. Unlimited users on every plan.",
+  "category": "Field service with quoting",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Estimates with options and 1-click conversion to jobs on all plans. A price book is not described on the pricing page.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "not-stated",
+      "note": "Not stated on the pages we read."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Larger crews where per-user pricing would add up.",
+  "skipIf": "You are a solo electrician. The entry price is higher than most others here.",
+  "watchOut": [
+    "The figures differed between two reads of the page on the same day, so confirm the current price on the vendor's page.",
+    "eSign is an add-on on the Starter and Plus plans."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.servicefusion.com/pricing"
+  ]
+}

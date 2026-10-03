@@ -1,0 +1,28 @@
+{
+  "name": "Markate",
+  "directoryType": "software-tool",
+  "summary": "Service operations software with estimates, work orders and invoices.",
+  "differentiator": "A base price plus a $5 per employee fee, with paid $10 add-ons for items other tools bundle, such as online booking and proposal templates.",
+  "url": "https://www.markate.com/pricing",
+  "pricing": "$39.95 a month billed yearly ($49.95 monthly), plus $5 per employee per month. Add-ons start at $10 a month.",
+  "category": "Quotes and invoices",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Estimates in standard, option and package forms. No electrical database is described.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Items you set up. No price feed is named."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Small shops that want a low base price and will add only what they need.",
+  "skipIf": "You want proposals and booking included without add-ons.",
+  "watchOut": [
+    "Winning sales proposal templates are a paid $10 a month add-on."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.markate.com/pricing"
+  ]
+}

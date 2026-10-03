@@ -1,0 +1,28 @@
+{
+  "name": "Drawer AI",
+  "directoryType": "software-tool",
+  "summary": "AI electrical takeoff that detects devices on PDF drawings and routes conduit.",
+  "differentiator": "Goes past counting to conduit routing and panel-to-circuit tag linking, and says it delivers a routed, priced takeoff. It does not say where the prices come from.",
+  "url": "https://drawer.ai/",
+  "pricing": "Starter and Enterprise annual subscriptions. Contact sales for pricing.",
+  "category": "AI takeoff tools",
+  "scope": {
+    "takeoff": "Detects power devices, lighting fixtures and panel schedules on PDFs, links panels, circuits and tags, and routes conduit.",
+    "library": "Not stated on the pages we read.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "not-stated",
+      "note": "The page says \"a fully routed, priced takeoff\" but names no price source."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Commercial shops that want conduit routing as part of takeoff.",
+  "skipIf": "You want a price on the page.",
+  "watchOut": [
+    "No plan prices are published."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://drawer.ai/"
+  ]
+}

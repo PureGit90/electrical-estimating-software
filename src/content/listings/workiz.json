@@ -1,0 +1,28 @@
+{
+  "name": "Workiz",
+  "directoryType": "software-tool",
+  "summary": "Field service software with three plans, each with unlimited estimates and a price book.",
+  "differentiator": "Puts unlimited estimates and a price book in every plan but shows no price on the page we read, so you have to request one.",
+  "url": "https://www.workiz.com/pricing/",
+  "pricing": "No price published on the pages we read. The page says annual billing saves \"$400+\" over monthly.",
+  "category": "Field service with quoting",
+  "scope": {
+    "takeoff": "None described on the pages we read.",
+    "library": "Unlimited estimates and a price book in Standard, Pro and Ultimate.",
+    "laborUnits": "Not stated on the pages we read.",
+    "materialPrices": {
+      "status": "you-enter",
+      "note": "Price book you maintain. No price feed is named."
+    }
+  },
+  "pricingConfidence": "quote",
+  "bestFor": "Small service shops that want estimates and a price book on any plan.",
+  "skipIf": "You want to compare a price before contacting the vendor.",
+  "watchOut": [
+    "\"Most popular\" on the Ultimate plan is the vendor's own label."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.workiz.com/pricing/"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "TurboBid Electrical",
+  "directoryType": "software-tool",
+  "summary": "Electrical estimating sold as a one-time purchase or a subscription, with a separate cloud service for price updates.",
+  "differentiator": "Publishes both the one-time price and the monthly price of the cloud service that carries material price updates, so a real yearly cost can be worked out from its own pages.",
+  "url": "https://www.turbobid.com/products/turbobid-electrical-estimating-one-time-purchase",
+  "pricing": "$1,395 one-time (list price $1,620, sale price shown the day we read it). TurboCloud, the sync service, is listed at $99 a month with the first month free on purchase; a one-year plan averages $79 a month. A monthly software subscription is also offered. We did not read its price.",
+  "category": "Bid estimating and takeoff",
+  "scope": {
+    "takeoff": "On-screen takeoff is listed among its features.",
+    "library": "Items and assemblies with an assembly editor. Counts are not stated.",
+    "laborUnits": "A labor unit feature and an employee labor burden wizard. The source of units is not stated.",
+    "materialPrices": {
+      "status": "separate",
+      "note": "Updates come through TurboCloud ($99 a month), TurboPrice or NetPricer connections, or supply house update files."
+    }
+  },
+  "pricingConfidence": "vendor",
+  "bestFor": "Shops that want to own the software and price the update service separately.",
+  "skipIf": "You want one monthly price that includes everything.",
+  "watchOut": [
+    "The sale price may change. Confirm it on the vendor page.",
+    "TurboBid's own pages do not state a labor-unit source or an assembly count."
+  ],
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.turbobid.com/products/turbobid-electrical-estimating-one-time-purchase",
+    "https://www.turbobid.com/collections/electrical-estimating-software",
+    "https://www.turbobid.com/pages/material-price-updates"
+  ]
+}
