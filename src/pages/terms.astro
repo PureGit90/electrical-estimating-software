@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME, CONTACT_EMAIL } from '../lib/site';
+---
+<BaseLayout title="Terms of use" description={`The terms for using ${SITE_NAME}: information only, no warranty, and how links to vendors work.`}>
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / Terms of use</p>
+    <h1>Terms of use</h1>
+    <p class="lead">This site is a free reference. By using it you agree to these terms.</p>
+
+    <h2>Information only</h2>
+    <p>{SITE_NAME} is operated by PALM ICON LLC. It summarizes what vendors state publicly about their software, including price, plans, assemblies and price feeds. It is not professional, legal, financial or purchasing advice, and we have not hands-on tested the products listed. Check the vendor's own page, and get a written quote where one is offered, before you buy.</p>
+
+    <h2>Accuracy</h2>
+    <p>Prices, plans and features change often. Each listing shows the date we last checked it, but we cannot promise that any figure is current or complete. The site is provided as is, without warranties of any kind, and we are not liable for decisions you make based on it, to the extent the law allows.</p>
+
+    <h2>Links to vendors</h2>
+    <p>The site links to vendors and other third parties we do not control. Their sites, products and terms are their own. Some links are affiliate links, marked as sponsored and explained on the <a href="/affiliate-disclosure/">affiliate disclosure</a> page. A purchase is a contract between you and the vendor, not with us.</p>
+
+    <h2>Our content</h2>
+    <p>The text, tables and layout on this site belong to PALM ICON LLC. You may quote short excerpts with a link back to the page. Vendor names, logos and product names belong to their owners and are used only to identify them.</p>
+
+    <h2>Using the site</h2>
+    <p>Do not use automated tools to copy the site in bulk, or do anything that interferes with how it works.</p>
+
+    <h2>Changes</h2>
+    <p>We may update these terms. The date below shows the latest version.</p>
+    {CONTACT_EMAIL && <p>Questions: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Privacy is covered in the <a href="/privacy-policy/">privacy policy</a>.</p>}
+    <p class="small">Last updated October 2026.</p>
+  </div>
+</BaseLayout>
