@@ -1,10 +1,10 @@
 {
   "name": "BuildVision AI",
   "directoryType": "software-tool",
-  "summary": "AI takeoff and quote generation for electrical plans, on a flat monthly price.",
-  "differentiator": "Flat monthly price with quote generation in the same plan. The company also publishes a \"7 best electrical estimating software\" list that ranks its own product first and says it \"tested every major platform\" with no method given, which is why this site does not rely on that list.",
+  "summary": "AI takeoff and quote generation for electrical plans, priced by the drawing sheets its AI takes off.",
+  "differentiator": "Unlimited users on every plan, priced by the plan sheets its AI takes off in your trades, with quote generation included. You see the sheet count and the price before each run. The company also publishes a \"7 best electrical estimating software\" list that puts its own product first and gives no testing method, which is why this site does not rely on that list.",
   "url": "https://www.buildvisionai.com/pricing",
-  "pricing": "$299 a month (Pro) or $499 a month (Max), flat and not per seat. 14-day free trial with 50,000 AI tokens.",
+  "pricing": "Field: AI takeoff pay as you go at $3.00 a sheet. Pro $299 a month with 150 AI sheets ($2.50 per extra sheet). Max $599 a month with 400 AI sheets ($2.00 per extra sheet). Annual billing is two months free: Field $790, Pro $2,990, Max $5,990 a year. Unlimited users. 14-day free trial, credit card required. A done-for-you takeoff checked by an estimator is $29 a sheet.",
   "category": "AI takeoff tools",
   "scope": {
     "takeoff": "AI plan reading and quantity extraction, with automated material takeoffs.",
@@ -20,9 +20,10 @@
   "skipIf": "You want a prebuilt NEC assembly library with live prices.",
   "watchOut": [
     "Its own ranking page lists McCormick at \"$1,500+/yr\", a figure McCormick does not publish.",
-    "Plan usage is measured in AI tokens. Check what a typical project uses."
+    "Usage is billed per sheet taken off in your selected trades. Check how many sheets a typical bid set uses for your trade.",
+    "A credit card is required to start the trial; there is a 7-day money-back guarantee on the first charge."
   ],
-  "lastChecked": "2026-10-03",
+  "lastChecked": "2026-11-05",
   "sources": [
     "https://www.buildvisionai.com/pricing",
     "https://www.buildvisionai.com/best-electrical-estimating-software"

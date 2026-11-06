@@ -3,7 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { CONTACT_EMAIL, DATA_DATE_LABEL } from '../lib/site';
 
 // One entry per correction: { date: 'YYYY-MM-DD', listing: 'name', what: 'what changed and why' }.
-const log: { date: string; listing: string; what: string }[] = [];
+const log: { date: string; listing: string; what: string }[] = [
+  { date: '2026-11-05', listing: 'BuildVision AI', what: 'Max plan rose from $499 to $599 a month. Usage is now billed per drawing sheet (150 sheets on Pro, 400 on Max) instead of AI tokens, and a pay-as-you-go Field plan was added. Pricing, summary and watch-outs updated.' },
+  { date: '2026-11-05', listing: 'Electric Ease', what: 'Relaunched as Electric Ease 2.0. The $2,999 a year per-user plan is gone; plans are now Core $299, Growth $699 and Scale $1,499 a month, with a NECA 2026 launch rebate. Listing rewritten from the new pages.' },
+  { date: '2026-11-05', listing: 'ElectricalTakeoffSoftware.com', what: 'The $7 per project price is gone. It now charges per job only when you unlock a takeoff: $0.02 per sq ft of floor area, from $49, at most $2 per device. Listing rewritten.' },
+  { date: '2026-11-05', listing: 'Markate', what: 'Annual billing rose from $39.95 to $45.95 a month. Monthly billing ($49.95), the $5 per employee fee and $10 add-ons are unchanged.' },
+];
 ---
 <BaseLayout title="Corrections and Updates" description="How to report a wrong or out-of-date price on this site, how we check it, and a log of every correction we have made.">
   <div class="wrap prose">
@@ -22,7 +27,7 @@ const log: { date: string; listing: string; what: string }[] = [];
     </ol>
 
     <h2>How often we re-read</h2>
-    <p>Every listing shows the date we read it. We aim to re-read every vendor's pages at least once a quarter, and sooner when a reader reports a change. The first full read was {DATA_DATE_LABEL}.</p>
+    <p>Every listing shows the date we read it. We re-read every vendor's pages once a month, and sooner when a reader reports a change. The latest full read was {DATA_DATE_LABEL}.</p>
 
     <h2>Correction log</h2>
     {log.length === 0 ? (

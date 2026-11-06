@@ -12,8 +12,8 @@ export const OPERATOR_NAME = 'PALM ICON LLC';
 export const OPERATOR_PLACE = 'Miami, Florida';
 
 // The date the vendors' own pages were last read. Update it whenever the data is re-read.
-export const DATA_DATE = '2026-10-03';
-export const DATA_DATE_LABEL = 'October 3, 2026';
+export const DATA_DATE = '2026-11-05';
+export const DATA_DATE_LABEL = 'November 5, 2026';
 
 // Main navigation. Keep it to 4 or 5 links.
 export const NAV: { href: string; label: string }[] = [

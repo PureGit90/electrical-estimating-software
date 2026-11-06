@@ -27,14 +27,14 @@ const jsonLd = [
   },
 ];
 ---
-<BaseLayout title={`${d.name} Price and Features`} description={`${d.summary}${d.lastChecked ? ` Read ${d.lastChecked}.` : ''}`} jsonLd={jsonLd}>
+<BaseLayout title={`${d.name} Price and Features`} description={`${d.summary}${d.lastChecked ? ` Prices checked ${d.lastChecked}.` : ''}`} jsonLd={jsonLd}>
   <div class="wrap prose wide">
     <p class="crumbs"><a href="/">Home</a> / <a href="/all/">All listings</a> / {d.name}</p>
     <h1>{d.name}</h1>
     <div class="meta">
       <span class={`tag ${conf.tone}`}>{conf.label}</span>
       {cat && <span class="tag neutral">{cat.short}</span>}
-      {d.lastChecked && <span class="tag neutral">Read {d.lastChecked}</span>}
+      {d.lastChecked && <span class="tag neutral">Prices checked {d.lastChecked}</span>}
     </div>
     <p class="lead">{d.summary}</p>
     <p><a class="btn" href={href} rel="sponsored" target="_blank">Go to {d.name}</a></p>

@@ -1,27 +1,27 @@
 {
   "name": "ElectricalTakeoffSoftware.com",
   "directoryType": "software-tool",
-  "summary": "A cloud takeoff editor with AI symbol detection, priced per project.",
-  "differentiator": "The lowest published takeoff price here, charged per project instead of per user. It is a takeoff editor that exports estimates, not an estimating database.",
+  "summary": "An AI electrical takeoff service: upload plans, it counts devices and measures wire and conduit, and you pay per job only if you unlock the result.",
+  "differentiator": "No subscription. Uploading and the takeoff preview are free, and you pay once per job only if you unlock it: $0.02 per square foot of floor area the electrical drawings cover, never less than $49 and never more than $2 per device counted. Its own worked example, an office building, comes to $469.",
   "url": "https://www.electricaltakeoffsoftware.com/",
-  "pricing": "$7 per project. 30-day free trial, no credit card.",
+  "pricing": "$0.02 per sq ft of floor area, from $49 a job, never more than $2 per device counted. Free upload and preview; you pay once by card only to unlock. No subscription.",
   "category": "AI takeoff tools",
   "scope": {
-    "takeoff": "AI symbol detection on vector PDFs. You review markers, place your own and export estimates.",
+    "takeoff": "Counts every device and measures wire and conduit from the drawing set, then lists the open items for you to settle.",
     "library": "Not stated on the pages we read.",
     "laborUnits": "Not stated on the pages we read.",
     "materialPrices": {
-      "status": "not-stated",
-      "note": "Not stated on the pages we read."
+      "status": "you-enter",
+      "note": "The bid is priced by CSI section at rates you set. No price feed is named."
     }
   },
   "pricingConfidence": "vendor",
-  "bestFor": "Small shops that bid a few jobs a month and want to pay per project.",
-  "skipIf": "You want a priced material database and labor units.",
+  "bestFor": "Shops that bid a few jobs a month and would rather pay per job than per seat.",
+  "skipIf": "You want a priced material database and labor units in a tool you run yourself.",
   "watchOut": [
-    "The AI detection is described for vector PDFs. The review editor is said to work on scanned plans too."
+    "The price follows floor area, capped at $2 per device, so check the preview price on a large building with few devices before you unlock."
   ],
-  "lastChecked": "2026-10-03",
+  "lastChecked": "2026-11-05",
   "sources": [
     "https://www.electricaltakeoffsoftware.com/"
   ]
